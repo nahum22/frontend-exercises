@@ -1,0 +1,32 @@
+.second-page{
+    background-image:url('Model-3-Exterior-Desktop-NA.avif');
+    background-size:cover;
+    height: 70vw;
+    position: relative;
+    top: -300px;
+    display: flex;
+align-content: center;    
+}
+
+.second-page-header{
+width: 100vw;    
+margin-top: 40px;
+
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.big-text{
+    font-size: 28px;
+    display: flex;
+    margin-bottom: 10px;
+ 
+
+}
+.smaller-text{
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+}

@@ -1,0 +1,196 @@
+/* CSS Reset using * */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%; /* Sets the font-size to 100% of the parent element's font-size */
+    font: inherit; /* Inherits font properties from the parent element */
+    vertical-align: baseline;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+
+body{
+    font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+
+}
+
+
+
+
+
+
+.bigger-font-footer{
+font-size: 18px;
+}
+
+
+
+.container-hero{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:-50vw;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.logo{
+    font-size: 20px;
+    color: white !important;
+    position: relative;
+    top: -53vw;
+    right: -4VW;
+}
+.bigger-font-footer{
+    font-size: 25px;
+}
+
+.section-1{
+    text-align: center;
+}
+.section-2{
+    text-align: center;
+}
+.section-3{
+    text-align: center;
+}
+
+
+
+.smaller-text-hero{
+    font-size: 18px;
+}
+
+.two-buttomns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.custom-ord-btn{
+margin-top: 20px;
+width:13%;
+font-size: medium;
+background-color: white;
+line-height: 40px;
+}
+.demo-drive-btn{
+    margin-top: 20px;
+
+    width:13%;
+    color: white;
+    background-color: transparent;
+    font-size: medium;
+    border: 2.8px white solid;
+
+}
+
+.demo-drive-btn:hover{
+    background-color: white ;
+    color: black ;
+
+    }
+
+
+
+
+.bottom-section{
+    display: flex;
+    position: relative;
+
+   justify-content: center;
+   color: white;
+    
+}
+.bottom-container{
+    top: -17vw;
+    color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+}
+
+
+
+
+.buttom-comment{
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+
+
+
+:root {
+    --gradient-size-w: 100px;
+    --gradient-size-h: 100px;
+    --gradient-position-x: 50%;
+    --gradient-position-y: 50%;
+   }
+
+.ordinary-text{
+ font-size: 14px;   
+ display: flex;
+ margin-left: 10px;
+margin-right: 10px;
+}
+.bigger-text{
+    font-size: 17px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+article{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+
+}
+header{
+width: 100vw;
+position: fixed;
+
+    --gradient-size-w: 80.84%;
+    --gradient-size-h: 126.38%;
+    --gradient-position-x: 42.35%;
+    --gradient-position-y: -21.69%;
+    line-height: 50px;
+
+    color: white;
+    font-size: 17;
+    font-weight:500;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+
+    background-color: radial-gradient(var(--gradient-size-w) var(--gradient-size-h) at var(--gradient-position-x) var(--gradient-position-y), rgba(108, 148, 255, .92) 0, rgba(0, 0, 0, .92) 100%);
+    background-image: radial-gradient(var(--gradient-size-w) var(--gradient-size-h) at var(--gradient-position-x) var(--gradient-position-y), rgba(108, 148, 255, .92) 0, rgba(0, 0, 0, .92) 100%);
+
+}
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;    
+}
+.sub-menue-cell{
+  margin-right: 20px;
+  margin-left:10px  
+}
+
+.sub-header{
+    color: white;
+    position: relative;
+    top: -54vw;
+    justify-content: center;
+}
+#my-video{
+    width: 100vw;
+}
