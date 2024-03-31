@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color-light-selected: white;
+        --background-color-light: lightblue;
+        --text-color-selected: black;
+
+        --background-color-dark: black;
+        --text-color-light: black;
+        --text-color-dark: white;
+      }
+
+      .dark-theme {
+        --background-color-light-selected: black;
+        --text-color-selected: white;
+      }
+
+      article {
+        background-color: var(--background-color-light-selected);
+        color: var(--text-color-selected);
+      }
+    </style>
+  </head>
+  <body>
+    <header>is is my personal card</header>
+
+    <article>
+      <div class="personal-name">name: nahum</div>
+      <div class="personal-photo">photo: nahum</div>
+      <div class="jub-title">jub description:devaloper</div>
+      <div class="bio">bio: i worked as a developer in the last 3 years</div>
+    </article>
+    <button onclick="document.body.classList.toggle('dark-theme')">
+      Toggle Theme
+    </button>
+  </body>
+</html>
