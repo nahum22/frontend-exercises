@@ -1,0 +1,25 @@
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  h1 {
+    font-size: 7vw !important;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    left: -70px;
+  }
+  .main__content h2 {
+    font-size: large;
+  }
+
+  body {
+    width: 100vw;
+  }
+  .main__btn {
+    top: 50px;
+  }
+
+  .footer__links {
+    display: none;
+  }
+}
