@@ -1,0 +1,121 @@
+.small-circle {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 40px;
+  display: inline-flex;
+  position: relative;
+}
+.wrapper {
+  -ms-flex-align: center;
+  display: inline-flex;
+  position: relative;
+  width: 40px;
+  margin-right: 40px;
+  height: 40px;
+}
+
+.spin21 {
+  animation: 1.5s linear infinite bulb;
+}
+.spin22 {
+  animation: 1.5s linear infinite bulb-2;
+}
+.spin23 {
+  animation: 1.5s linear infinite bulb-3;
+}
+
+.spin24 {
+  background-color: yellow;
+  animation: 1.5s linear infinite bulb-4;
+}
+.spin25 {
+  background-color: yellow;
+
+  animation: 1.5s linear infinite bulb-5;
+}
+.spin26 {
+  background-color: yellow;
+
+  animation: 1.5s linear infinite bulb-6;
+}
+
+@keyframes bulb {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+@keyframes bulb-2 {
+  25% {
+    background-color: white;
+  }
+  75% {
+    background-color: yellow;
+  }
+}
+
+@keyframes bulb-3 {
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: yellow;
+  }
+}
+
+@keyframes bulb-4 {
+  0% {
+    top: -10px;
+    width: 0px;
+    height: 0px;
+    left: 10px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes bulb-5 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  25% {
+    top: -10px;
+    width: 0px;
+    height: 0px;
+    left: 10px;
+  }
+
+  75% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes bulb-6 {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  50% {
+    top: -10px;
+    width: 0px;
+    height: 0px;
+    left: 10px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
