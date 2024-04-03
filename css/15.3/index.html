@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        gap: 10px;
+        display: grid;
+        grid-template-areas:
+          "area1 area1 area1"
+          "area2 area3 area4"
+          "area5 area5 area5";
+
+        grid-template-rows: auto auto auto;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          gap: 10px;
+          display: grid;
+          grid-template-areas:
+            "area1 area1 area1"
+            "area2 area3 area3"
+            "area4 area4 area4"
+            "area5 area5 area5";
+
+          grid-template-rows: auto auto auto;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .container {
+          width: 30vw;
+          gap: 10px;
+          display: grid;
+          grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5";
+
+          grid-template-rows: auto auto auto;
+        }
+      }
+
+      .area1 {
+        padding: 10px;
+        grid-area: area1;
+        background-color: red;
+        border-radius: 7px;
+      }
+      .area2 {
+        grid-area: area2;
+        background-color: blue;
+        border-radius: 7px;
+      }
+      .area3 {
+        grid-area: area3;
+        background-color: green;
+        border-radius: 7px;
+      }
+      .area4 {
+        padding: 10px;
+        grid-area: area4;
+        background-color: purple;
+        border-radius: 7px;
+      }
+      .area5 {
+        padding: 10px;
+        grid-area: area5;
+        background-color: yellow;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="area1">Header</div>
+      <div class="area2">Sidebar</div>
+      <div class="area3">
+        contenr<br />
+        More content than we had before so this colunmn is quite tall
+      </div>
+      <div class="area4">sidebar 2</div>
+      <div class="area5">footer</div>
+    </div>
+  </body>
+</html>

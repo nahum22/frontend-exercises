@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 30vw;
+
+        display: grid;
+        grid-template-areas:
+          "area1 area1 area2   "
+          "area3 area4 area4   "
+          "area5 area5 area5   ";
+        grid-gap: 10px;
+      }
+
+      .area1 {
+        grid-area: area1;
+        background-color: red;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .area2 {
+        grid-area: area2;
+        background-color: blue;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .area3 {
+        grid-area: area3;
+        background-color: green;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .area4 {
+        grid-area: area4;
+        background-color: purple;
+        height: 30px;
+        border-radius: 7px;
+      }
+      .area5 {
+        grid-area: area5;
+        background-color: yellow;
+        height: 30px;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="area1"></div>
+      <div class="area2"></div>
+      <div class="area3"></div>
+      <div class="area4"></div>
+      <div class="area5"></div>
+      <div class="area5"></div>
+    </div>
+  </body>
+</html>
