@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+.main-header{
+    font-size: 28px;
+}
+.small-text{
+    margin-bottom: 20px;
+}
+.create-buttom{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color:rgb(195,195,195);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.text-button{
+    color: black;
+    font-size: 15px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+   height: 100vw;
+}
+.header{
+    text-align: center;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    border: 1px solid grey;
+}
+.last-input{
+    margin-bottom: 0px;
+
+
+}
+
+.content{
+    padding: 30px;
+    max-width: 500px;
+    margin-right: auto;
+}
+label{
+    margin-bottom: 50px;
+}
+.question{
+    color: gray;
+    margin-bottom:  100px;
+    padding-top: 40px;
+}
+
+
+</style>
+
+
+
+
+
+  </head>
+  <body>
+<div class="container">
+<div class="header">   
+<div class="main-header">Create an account </div>
+<div class="sec-header">already have an account?log in </div>
+</div>
+<div class="content">
+<label class='question'>what should we call you?</label>
+<input class="input" type="text" placeholder="Enter your profile name">
+<label class='question'>what's your email <label>
+<input type="text" class="input" placeholder="Enter your email adress">
+<label class='question'>Create a password<label>
+<input type="text" class="input last-input" placeholder="Enter your password">
+<div class="small-text"> use 8 or more charecters with a mix of letteers, numbers & symbols</div>
+<div class="text-button"> By creating an acount, you agree with the Terms of use and privacy policy</div>
+<button type='button' class="create-buttom"> create an accpunt</button>
+</div>
+
+
+</div>
+
+  </body>
+</html>
