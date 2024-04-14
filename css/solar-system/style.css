@@ -1,0 +1,113 @@
+body {
+  width: 100vw;
+  position: relative;
+}
+.solar-system {
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  z-index: 3;
+  right: 50%;
+  top: 20vw;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.venus {
+  position: absolute;
+  top: 4vw;
+  transform: rotate(-60deg);
+  left: 35vw;
+  z-index: 3;
+  height: 800px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px black dashed;
+}
+.planet-venus {
+  top: 10vw;
+  border-radius: 50%;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  animation-name: venus-rotating;
+  animation-duration: 4s;
+}
+
+.mercury {
+  transform: rotate(60deg);
+
+  position: absolute;
+  top: 4vw;
+  left: 30vw;
+  height: 800px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px black dashed;
+}
+.planet-marcury {
+  height: 50px;
+  width: 50px;
+  top: 10vw;
+  z-index: 10;
+  border-radius: 50%;
+  position: absolute;
+
+  background-color: burlywood;
+
+  animation-name: mercury-rotating;
+  animation-duration: 4s;
+}
+
+@keyframes mercury-rotating {
+  0% {
+  }
+  25% {
+    left: 1vw;
+    top: 20vw;
+  }
+
+  50% {
+    left: 10vw;
+    top: 40vw;
+  }
+
+  75% {
+    left: 20vw;
+    top: 30vw;
+  }
+
+  100% {
+    left: 2vw;
+    top: 0vw;
+  }
+}
+
+@keyframes venus-rotating {
+  0% {
+  }
+  25% {
+    left: 1vw;
+    top: 20vw;
+  }
+
+  50% {
+    left: 10vw;
+    top: 40vw;
+  }
+
+  75% {
+    left: 20vw;
+    top: 30vw;
+  }
+
+  100% {
+    left: 2vw;
+    top: 0vw;
+  }
+}

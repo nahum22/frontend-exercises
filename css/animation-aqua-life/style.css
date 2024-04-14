@@ -1,0 +1,168 @@
+body {
+  background-color: aquamarine;
+}
+.bubble {
+  position: relative;
+  top: 400px;
+  left: 400px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 5px solid #0000e680;
+  background-color: lightblue;
+
+  animation-name: bubble;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.ocen {
+  width: 100vw;
+  height: 100vw;
+  background-color: rgb(34, 0, 255);
+  position: relative;
+}
+
+.fish {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+  animation-name: fish-rotating;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.seaweed {
+  position: relative;
+  top: 70vw;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to right, #2ecc71, #27ae60, #1abc9c);
+  animation-name: seaweed;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.frond {
+  width: 50px;
+  height: 20px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+@keyframes fish-rotating {
+  0% {
+    top: 10vw;
+
+    right: 200px;
+  }
+  10% {
+    top: 20vw;
+
+    right: 150px;
+  }
+
+  15% {
+    right: 0%;
+    top: 30vw;
+  }
+  15% {
+    right: 0%;
+    top: 30vw;
+  }
+
+  35% {
+    top: 50vw;
+
+    right: 400px;
+  }
+
+  45% {
+    top: 50vw;
+
+    right: 700px;
+  }
+
+  65% {
+    top: 25vw;
+
+    left: 1000px;
+  }
+
+  75% {
+    top: 0vw;
+
+    left: 1500px;
+  }
+
+  89% {
+    top: 30vw;
+
+    left: 30vw;
+  }
+
+  95% {
+    left: 0px;
+    top: 20vw;
+  }
+  100% {
+    left: 0px;
+    top: 10vw;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    top: 10vw;
+  }
+  10% {
+    top: 20vw;
+  }
+
+  15% {
+    top: 30vw;
+  }
+  15% {
+    top: 30vw;
+  }
+
+  35% {
+    top: 50vw;
+  }
+
+  45% {
+    top: 50vw;
+  }
+
+  65% {
+    top: 25vw;
+  }
+
+  75% {
+    top: 0vw;
+  }
+
+  89% {
+    top: 30vw;
+  }
+
+  95% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 10vw;
+  }
+}
+
+@keyframes seaweed {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
