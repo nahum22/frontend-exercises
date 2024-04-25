@@ -223,10 +223,14 @@ function destinationRatingFrequency(array_num) {
         freq += 1;
       }
     }
+    result.push(array_num[i1,freq])
   }
 
   return result;
-} // Input: [3, 4, 3, 5, 4, 5, 5]
+} //
+
+
+console.log(destinationRatingFrequency([3, 4, 3, 5, 4, 5, 5]))
 
 // 4. Normalize Destination Ratings
 
@@ -246,4 +250,4 @@ console.log(result);
 
 }
 
-normalizeDestinationRarings([1, 2, 3, 4, 5], 0, 3)
+normalizeDestinationRarings([1, 2, 3, 4, 5], 0, 100)
