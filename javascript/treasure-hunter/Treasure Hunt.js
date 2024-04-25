@@ -1,16 +1,16 @@
 const grid = document.getElementById("grid");
-let user = [4, 0];
+let user = [0, 0];
 let treasures = [
-  [0, 3],
-  [0, 7],
-  [1, 3],
-  [1, 7],
-  [1, 8],
+  [0, Math.ceil(Math.random()*10)],
+  [0, Math.ceil(Math.random()*10)],
+  [1, Math.ceil(Math.random()*10)],
+  [1, Math.ceil(Math.random()*10)],
+  [1, Math.ceil(Math.random()*10)],
 ];
 let traps = [
-  [5, 3],
-  [5, 7],
-  [5, 8],
+  [5, Math.ceil(Math.random()*10)],
+  [5, Math.ceil(Math.random()*10)],
+  [5, Math.ceil(Math.random()*10)],
 ];
 
 createGrid(user, treasures, traps);
