@@ -9,10 +9,9 @@ function processTravelPlans(travelPlan, callBack) {
       typeof travel.city !== "undefined" &&
       typeof travel.activities !== "undefined"
     ) {
-      console.log(
+      throw new Error(
         `Travel plan with ID ${travel.id} is not in the right structure`
       );
-      return null;
     }
   }
 
@@ -29,7 +28,7 @@ function processTravelPlans(travelPlan, callBack) {
 
 function processActivities(travelPlan, callBack) {
   if (typeof travelPlan !== "Array") {
-    console.log("Expected an array of travel plans");
+    throw new Error("Expected an array of travel plans");
   }
 
   for (travel of travelPlan) {
@@ -38,10 +37,9 @@ function processActivities(travelPlan, callBack) {
       typeof travel.name !== "undefined" &&
       typeof travel.duration !== "undefined"
     ) {
-      console.log(
+      throw new Error(
         `activity with ID ${travel.id} is not in the right structure`
       );
-      return null;
     }
   }
 
@@ -62,8 +60,9 @@ function processActivities(travelPlan, callBack) {
     typeof travelPlan.city !== "undefined" &&
     typeof travelPlan.activities !== "undefined"
   ) {
-    console.log(`activity with ID ${travel.id} is not in the right structure`);
-    return null;
+    throw new Error(
+      `activity with ID ${travel.id} is not in the right structure`
+    );
   }
 
   let newTravelPlans = JSON.parse(JSON.stringify(travelPlan));

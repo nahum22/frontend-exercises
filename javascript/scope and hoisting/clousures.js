@@ -13,9 +13,8 @@ function createTravelPlanner() {
 
   function removeDestination(destinationName) {
     const tempResult = [];
-    let action = false; // Declare action with let
+    let action = false; 
     for (let destination of travels) {
-      // Declare destination with let
       if (destination === destinationName) {
         console.log("destination was deleted");
         action = true;
@@ -24,13 +23,12 @@ function createTravelPlanner() {
       }
     }
     if (!action) {
-      console.log("destination does not exist");
+      throw new Error("destination does not exist");
     }
 
     travels = [...tempResult];
     console.log(travels);
   }
-  // Return an object with the methods
   return {
     addDestination,
     removeDestination,
@@ -57,9 +55,8 @@ function createTravelPlannerWithDetails() {
 
   function removeDestination(destinationName) {
     const tempResult = [];
-    let action = false; // Declare action with let
+    let action = false;
     for (let destination of travels) {
-      // Declare destination with let
       if (destination.destinationName === destinationName) {
         console.log("destination was deleted");
         action = true;
@@ -74,8 +71,6 @@ function createTravelPlannerWithDetails() {
     travels = [...tempResult];
     console.log(travels);
   }
-  // Return an object with the methods
-  return {
     addDestinationWithDetails,
     removeDestination,
     getDestinationsWithDetails,
@@ -116,9 +111,8 @@ function createSortableTravelPlanner() {
 
   function removeDestination(destinationName) {
     const tempResult = [];
-    let action = false; // Declare action with let
+    let action = false;
     for (let destination of travels) {
-      // Declare destination with let
       if (destination.destinationName === destinationName) {
         console.log("destination was deleted");
         action = true;
@@ -133,7 +127,6 @@ function createSortableTravelPlanner() {
     travels = [...tempResult];
     console.log(travels);
   }
-  // Return an object with the methods
   return {
     addDestinationWithDetails,
     removeDestination,
@@ -189,7 +182,6 @@ function createSortableTravelPlanner() {
     travels = [...tempResult];
     console.log(travels);
   }
-  // Return an object with the methods
   return {
     addDestinationWithDetails,
     removeDestination,
