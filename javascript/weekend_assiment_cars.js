@@ -668,7 +668,7 @@ class CarAgencyManager {
         for (let i1 = 0; i1 < this.agencies[i].cars.length - 1; i1++) {
           for (let i3 = 0; i3 < this.agencies[i].cars[i1].models.length; i3++) {
             if (this.agencies[i].cars[i1].models[i3].carNumber === carId) {
-              this.agencies[i].cars[i1].models[i3] = "";
+              this.agencies[i].cars[i1].models.splice(i3, 1);
               return true;
             }
           }
