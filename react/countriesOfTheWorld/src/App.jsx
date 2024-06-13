@@ -18,8 +18,11 @@ function App() {
     const filteredNames = countryNames.filter((item) => {
       return item.name.official.includes(input);
     });
-
     setFilteredCountryNames(filteredNames);
+
+    if (input === "") {
+      setFilteredCountryNames(countryNames);
+    }
   };
 
   const fetchData = async () => {
@@ -42,7 +45,6 @@ function App() {
       <input type="text" onChange={updateFilter} />
 
       <div>
-   
         {FilteredcountryNames.map((item) => (
           <p key={item.name.official}>{item.name.official}</p>
         ))}
